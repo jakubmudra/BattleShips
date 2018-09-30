@@ -14,13 +14,15 @@ namespace BattleShip
 
         public char PrintChar;
 
+        public bool Ghost;
 
-        public Point(int x,int y, bool occup, char pc)
+
+        public Point(int x, int y, bool occup, char pc, bool ghost = false)
         {
 
             XPos = x;
             YPos = y;
-
+            Ghost = ghost;
             Occupied = occup;
             PrintChar = pc;
 
